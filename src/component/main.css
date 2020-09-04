@@ -1,0 +1,39 @@
+/* TOP BAR START */
+.top-bar{
+    border-bottom: 1px solid #ddd;
+    padding: .464em 0;
+}
+.menu-list {
+    position: relative;
+    display: inline-block;
+    max-width: 1000px;
+    text-align: right;
+    right: 5px;
+    height: 20px;
+    float: right;
+}
+.menu-list ul#menu {
+    position: relative;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 18px;
+    font-size: medium;
+}
+#menu li {
+    list-style: none;
+    padding: 10px 10px;
+    margin: 0 0.3vh;
+}
+#menu li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 50;
+  
+}
+/* TOP BAR END */
+
+/* NAVBAR START HERE  */
+ 
