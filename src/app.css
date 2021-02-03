@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rajdhani", sans-serif;
+}
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600&display=swap");
+
+.Logo {
+  display: flex;
+}
+.color-head {
+  color: darkred;
+}
+.img {
+  margin: 4px;
+}
+.main-row{
+    margin: .36em;
+    
+   
+}
+.img-cart{
+    margin-left: 5em;
+}
+
+.bg{
+  background: -moz-linear-gradient(134deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, rgba(186,2,2,1) 50%, rgba(186,2,2,1) 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(186,2,2,1)), color-stop(50%, rgba(186,2,2,1)), color-stop(51%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(134deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, rgba(186,2,2,1) 50%, rgba(186,2,2,1) 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(134deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, rgba(186,2,2,1) 50%, rgba(186,2,2,1) 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(134deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, rgba(186,2,2,1) 50%, rgba(186,2,2,1) 100%); /* ie10+ */
+  background: linear-gradient(316deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, rgba(186,2,2,1) 50%, rgba(186,2,2,1) 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#BA0202', endColorstr='#FFFFFF',GradientType=0 ); /* ie6-9 */
+  width: 100%;
+  height:100vh  
+  
+
+}
+.content{
+  width: 100%;
+  position: relative;
+}
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&display=swap');
+.text-1{
+  /* position: absolute;
+  top:0;
+  left: 1em; */
+  font-size: 3.4em;
+  color: white;
+  font-family: 'Cinzel', serif;
+}
+
+
+
+.btn-order{
+   /* background-color: white!important; */
+   /* color: black; */
+   margin-left: 1em;
+}
+.bry-img{
+  display: flex;
+  justify-content: center;
+}
+.bry-text{
+  font-size: 3.4em;
+  padding: 40px 5px;
+  font-family: 'Cinzel', serif;
+}
+.anime{
+  position: relative;
+  animation: move 5s ease-in;
+
+}
+
+@keyframes move{
+  0%{
+    left:0px;
+    top:0px;
+  }
+  100%{
+    
+    left: 200px;
+    top: 0px;
+  }
+}
+
+.food{
+  position: absolute;
+  animation: up 5s;
+}
+
+@keyframes up{
+  0%{
+    top:0px;
+    left:0px;
+  }
+  100%{
+    top:0px;
+    left:300px;
+  }
+}
