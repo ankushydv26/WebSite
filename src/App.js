@@ -1,56 +1,49 @@
-import React from 'react'
+/* eslint-disable jsx-a11y/accessible-emoji */
+import React, {useState} from 'react'
 import Container  from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
-import Button  from "react-bootstrap/Button"
+// import Button from "react-bootstrap/Button"
 import "./app.css"
 
-import Nonveg from "./image/non Veg.png"
-import Cart from "./image/foodcart.png"
-import Safe from "./image/safe.jpg"
-import Bry from "./image/briyani.jpg"
+// import Nonveg from "./image/non Veg.png"
+// import Cart from "./image/foodcart.png"
+// import Safe from "./image/safe.jpg"
+// import Bry from "./image/briyani.jpg"
+import Cart from "./Carts"
 
  const App = () => {
+   const [range , setRange] = useState(1)
+  const handleCalculation = () => {
+     let price=300;
+     const bill = range * price
+     return bill
+    
+   }
+  //  console.log(range)
+  console.log(handleCalculation())
   return (
     <>
-         <Container >
-           <Row className="main-row">
-              <Col className="Logo ml-5 p-2"> <h3> <span className="color-head">Shree</span>Dev <em>Fast Food</em> </h3> 
-                  <div className="img">
-                    <img src={Nonveg} alt="icon" width="20px"/>
-                  </div>
+        <Container fluid className="fx">
+          <Row className="navbar">
+            <div className="logo">
+              <Col >
+                <h3 className="logo-text">ShreeDev  Home Delivery fast food</h3>
               </Col>
-              <Col className=" p-2">
-                 <div className="img-cart">
-                   <img src={Cart} alt="cart" width="24px" height="auto"/>
-                      <Button variant="success" className="btn-order" >Order Now</Button>
-                 </div>
+            </div>
+              <Col  className="displayN" >
+                <ul className="float-right list">
+                  <li><a href="" >Home</a></li>
+                  <li><a href="" >About</a></li>
+                  <li><a href="" >Services</a></li>
+                  <li><a href="" >Order </a></li>
+                </ul>
               </Col>
-           </Row> 
-         </Container>
-         <Container className="p-0" fluid>
-           <div className="bg">
-             <Row  className="p-3 content">
-               <Col xs={12} md={6}>
-                
-                <h2 className="text-1 ">Get Best Food with Safe Delivery and Fast Delivery</h2>
-               </Col>
-               <Col xs={12} md={5} >
-                <img className="ml-5 anime" src={Safe} alt="pic" width="400px" height="auto"/>
-               </Col>
-             </Row>
-             <Row>
-               <Col xs={12} md={6} className="bry-img" >
-                 <img className="food" src={Bry} alt="food"  width="300px" height="auto"/>
-               </Col>
-               <Col xs={12} md={6} >
-                 <h2 className="bry-text">Taste our Best  Briyani you Ever test</h2>
-               </Col>
-             </Row>
-
-           </div>
-         </Container>
-      
+          </Row>
+        </Container>
+        <Cart style={{marginTop:"300px"}}/>
+         
+       
     </>
   )
 }

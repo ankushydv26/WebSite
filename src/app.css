@@ -1,102 +1,125 @@
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Rajdhani", sans-serif;
-}
+
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600&display=swap");
 
-.Logo {
-  display: flex;
-}
-.color-head {
-  color: darkred;
-}
-.img {
-  margin: 4px;
-}
-.main-row{
-    margin: .36em;
-    
-   
-}
-.img-cart{
-    margin-left: 5em;
-}
 
-.bg{
-  background: -moz-linear-gradient(134deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, rgba(186,2,2,1) 50%, rgba(186,2,2,1) 100%); /* ff3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(186,2,2,1)), color-stop(50%, rgba(186,2,2,1)), color-stop(51%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1))); /* safari4+,chrome */
-  background: -webkit-linear-gradient(134deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, rgba(186,2,2,1) 50%, rgba(186,2,2,1) 100%); /* safari5.1+,chrome10+ */
-  background: -o-linear-gradient(134deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, rgba(186,2,2,1) 50%, rgba(186,2,2,1) 100%); /* opera 11.10+ */
-  background: -ms-linear-gradient(134deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, rgba(186,2,2,1) 50%, rgba(186,2,2,1) 100%); /* ie10+ */
-  background: linear-gradient(316deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, rgba(186,2,2,1) 50%, rgba(186,2,2,1) 100%); /* w3c */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#BA0202', endColorstr='#FFFFFF',GradientType=0 ); /* ie6-9 */
-  width: 100%;
-  height:100vh  
-  
 
-}
-.content{
-  width: 100%;
-  position: relative;
-}
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&display=swap');
-.text-1{
-  /* position: absolute;
-  top:0;
-  left: 1em; */
-  font-size: 3.4em;
-  color: white;
-  font-family: 'Cinzel', serif;
+body{background:
+  url(image/mine.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.logo-text{
+  position: relative;
+  font-family: 'Rajdhani', sans-serif ;
 }
 
+.logo-text::after{
+  position: absolute;
+  top: 20px;
+  right: -10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  content: '';
+  background-color: red;
+  border: wheat;
 
-
-.btn-order{
-   /* background-color: white!important; */
-   /* color: black; */
-   margin-left: 1em;
 }
-.bry-img{
+.list li{
+  list-style: none;
+  display: inline-block;
+  padding: 0 25px;
+  margin-right: 100px;
+  font-weight: 600;
+}
+.list > li > a{
+  text-decoration: none;
+  font-size: 1.3em;
+  font-family: 'Rajdhani',sans-serif;
+  letter-spacing: 1px;
+  align-items: center;
+}
+.list> li> a:hover{
+  color: red;
+  font-size: x-large;
+  transition: ease-in-out;
+  font-family: 'Courier New', Courier, monospace;
+}
+.fx{
+  position: fixed;
+  z-index: 2;
+}
+
+.navbar{
+  background: rgba( 255, 255, 255, 0.55 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 7.0px );
+  -webkit-backdrop-filter: blur( 7.0px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.food-container{
   display: flex;
   justify-content: center;
+  align-items: center;
+
 }
-.bry-text{
-  font-size: 3.4em;
-  padding: 40px 5px;
-  font-family: 'Cinzel', serif;
+.food-item{
+  padding: 1.7em;
+  margin-top: 5rem;
+  width: 920px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  /* border: 1px dashed black; */
+  background: rgba(223, 207, 205, 0.3);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 7.5px );
+  -webkit-backdrop-filter: blur( 7.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
-.anime{
+.food-text{
+/* border-top: 1px solid black; */
+}
+.food-text img{
+  padding: 5px;
+}
+.food-name{
+  padding: 2px;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.rate{
+  font-family: 'Rajdhani', sans-serif ;
+
+}
+.bill{
+  /* border: 1px dashed black; */
   position: relative;
-  animation: move 5s ease-in;
-
 }
-
-@keyframes move{
-  0%{
-    left:0px;
-    top:0px;
-  }
-  100%{
-    
-    left: 200px;
-    top: 0px;
-  }
-}
-
-.food{
+.bil{
   position: absolute;
-  animation: up 5s;
+  left: -90px;
+  top: 100px;
 }
-
-@keyframes up{
-  0%{
-    top:0px;
-    left:0px;
-  }
-  100%{
-    top:0px;
-    left:300px;
+.plate-text{
+  font-style: italic;
+}
+.output{
+  position: absolute;
+  top: 100px;
+  left: 80px;
+}
+.order{
+    position: absolute;
+  top: 100px;
+  left: 300px;
+}
+@media only screen and (max-width: 600px) {
+  .displayN{
+    display: none;
   }
 }
