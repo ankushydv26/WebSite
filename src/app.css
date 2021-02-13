@@ -11,115 +11,23 @@ body{background:
   background-attachment: fixed;
   background-position: center;
 }
-.logo-text{
-  position: relative;
-  font-family: 'Rajdhani', sans-serif ;
-}
-
-.logo-text::after{
-  position: absolute;
-  top: 20px;
-  right: -10px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  content: '';
-  background-color: red;
-  border: wheat;
-
-}
-.list li{
+ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   list-style: none;
-  display: inline-block;
-  padding: 0 25px;
-  margin-right: 100px;
-  font-weight: 600;
+  font-family: "Cinzel", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  cursor: pointer;
+  color: rgb(26, 44, 206);
+  font-weight: 800;
 }
-.list > li > a{
-  text-decoration: none;
+ul > li {
+  margin: 1em;
   font-size: 1.3em;
-  font-family: 'Rajdhani',sans-serif;
-  letter-spacing: 1px;
-  align-items: center;
 }
-.list> li> a:hover{
-  color: red;
-  font-size: x-large;
-  transition: ease-in-out;
-  font-family: 'Courier New', Courier, monospace;
-}
-.fx{
-  position: fixed;
-  z-index: 2;
-}
-
-.navbar{
-  background: rgba( 255, 255, 255, 0.55 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 7.0px );
-  -webkit-backdrop-filter: blur( 7.0px );
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-.food-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-.food-item{
-  padding: 1.7em;
-  margin-top: 5rem;
-  width: 920px;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  /* border: 1px dashed black; */
-  background: rgba(223, 207, 205, 0.3);
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 7.5px );
-  -webkit-backdrop-filter: blur( 7.5px );
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-.food-text{
-/* border-top: 1px solid black; */
-}
-.food-text img{
-  padding: 5px;
-}
-.food-name{
-  padding: 2px;
-  font-size: 16px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.rate{
-  font-family: 'Rajdhani', sans-serif ;
-
-}
-.bill{
-  /* border: 1px dashed black; */
-  position: relative;
-}
-.bil{
-  position: absolute;
-  left: -90px;
-  top: 100px;
-}
-.plate-text{
-  font-style: italic;
-}
-.output{
-  position: absolute;
-  top: 100px;
-  left: 80px;
-}
-.order{
-    position: absolute;
-  top: 100px;
-  left: 300px;
-}
-@media only screen and (max-width: 600px) {
-  .displayN{
-    display: none;
-  }
+.content{
+  margin: 20px 30px;
+  text-align: center;
+  font-family: 'Rajdhani';
+  padding: 1em;
 }

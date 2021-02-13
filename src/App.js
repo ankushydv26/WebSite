@@ -1,52 +1,53 @@
-/* eslint-disable jsx-a11y/accessible-emoji */
-import React, {useState} from 'react'
-import Container  from "react-bootstrap/Container"
-import Row from "react-bootstrap/Row"
-import Col from "react-bootstrap/Col"
-// import Button from "react-bootstrap/Button"
-import "./app.css"
+import React, { Component } from 'react'
+import "./app.css";
 
-// import Nonveg from "./image/non Veg.png"
-// import Cart from "./image/foodcart.png"
-// import Safe from "./image/safe.jpg"
-// import Bry from "./image/briyani.jpg"
-import Cart from "./Carts"
+export class App extends Component {
+  render() {
+    return (
+      <>
+       <div className="main">
+         <div className="container">
+           <nav>
+             <ul>
+               <li>Home</li>
+               <li>About</li>
+               <li>Contact</li>
+             </ul>
+           </nav>
+           <div className="card">
+             <div className="card-container">
+               <Card/>
+             </div>
+           </div>
+         </div>  
+       </div> 
+      </>
+    )
+  }
+}
 
- const App = () => {
-   const [range , setRange] = useState(1)
-  const handleCalculation = () => {
-     let price=300;
-     const bill = range * price
-     return bill
-    
-   }
-  //  console.log(range)
-  console.log(handleCalculation())
-  return (
-    <>
-        <Container fluid className="fx">
-          <Row className="navbar">
-            <div className="logo">
-              <Col >
-                <h3 className="logo-text">ShreeDev  Home Delivery fast food</h3>
-              </Col>
-            </div>
-              <Col  className="displayN" >
-                <ul className="float-right list">
-                  <li><a href="" >Home</a></li>
-                  <li><a href="" >About</a></li>
-                  <li><a href="" >Services</a></li>
-                  <li><a href="" >Order </a></li>
-                </ul>
-              </Col>
-          </Row>
-        </Container>
-        <Cart style={{marginTop:"300px"}}/>
-         
-       
-    </>
+const details = [
+  {title:"Card-title", content:"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",author:"rahul"},
+  {title:"Card-title1", content:"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",author:"kumar"},
+  {title:"Card-title2", content:"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. ",author:"afzal"},
+  {title:"Card-title3", content:"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. .",author:"wani"},
+
+]
+
+const Card = ( ) =>{
+  return(
+    <div className="crd" >
+      {details.map((detail) =>{
+        return(
+          <div className="content">
+            {detail.title}<br/>
+            {detail.content}<br/>
+            {detail.author}
+          </div>
+        )
+      })}
+    </div>
   )
 }
 
-
-export default App;
+export default App
